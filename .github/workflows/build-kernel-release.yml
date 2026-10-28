@@ -59,6 +59,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_HTTP_TIMEOUT: 600
+          OP_OPT: ${{ github.event.inputs.OP_OPT }}
         run: |
           set -euo pipefail
           echo "::group::Matrix generation"
