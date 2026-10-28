@@ -4,6 +4,8 @@ permissions:
   contents: write
   actions: write
 
+env:
+  OP_OPT: ${{ github.event.inputs.OP_OPT }}
 on:
   workflow_dispatch:
     inputs:
