@@ -9,6 +9,8 @@ env:
   OP_BBR3: ${{ github.event.inputs.OP_BBR3 }}
   OP_ZEROMOUNT: ${{ github.event.inputs.OP_ZEROMOUNT }}
   OP_ZUMA: ${{ github.event.inputs.OP_ZUMA }}
+  OP_NOMOUNT: ${{ github.event.inputs.OP_NOMOUNT }}
+  OP_DS: ${{ github.event.inputs.OP_DS }}
 on:
   workflow_dispatch:
     inputs:
