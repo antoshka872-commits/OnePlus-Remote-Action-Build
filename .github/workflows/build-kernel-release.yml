@@ -11,6 +11,9 @@ env:
   OP_ZUMA: ${{ github.event.inputs.OP_ZUMA }}
   OP_NOMOUNT: ${{ github.event.inputs.OP_NOMOUNT }}
   OP_DS: ${{ github.event.inputs.OP_DS }}
+  OP_BLACKLIST_MODULES: ${{ github.event.inputs.OP_BLACKLIST_MODULES }}
+  OP_LTO: ${{ github.event.inputs.OP_LTO }}
+  OP_DEBUG: ${{ github.event.inputs.OP_DEBUG }}
 on:
   workflow_dispatch:
     inputs:
