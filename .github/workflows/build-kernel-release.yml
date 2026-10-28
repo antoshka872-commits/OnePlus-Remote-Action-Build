@@ -5,15 +5,11 @@ permissions:
   actions: write
 
 env:
-  OP_OPT: ${{ github.event.inputs.OP_OPT }}
-  OP_BBR3: ${{ github.event.inputs.OP_BBR3 }}
-  OP_ZEROMOUNT: ${{ github.event.inputs.OP_ZEROMOUNT }}
-  OP_ZUMA: ${{ github.event.inputs.OP_ZUMA }}
-  OP_NOMOUNT: ${{ github.event.inputs.OP_NOMOUNT }}
-  OP_DS: ${{ github.event.inputs.OP_DS }}
-  OP_BLACKLIST_MODULES: ${{ github.event.inputs.OP_BLACKLIST_MODULES }}
-  OP_LTO: ${{ github.event.inputs.OP_LTO }}
-  OP_DEBUG: ${{ github.event.inputs.OP_DEBUG }}
+  OP_OPT: ${{ github.event.inputs.optimize_level }}
+  OP_BBR3: 'false'
+  OP_ZEROMOUNT: 'false'
+  OP_NOMOUNT: 'false'
+  OP_BLACKLIST_MODULES: 'false'
 on:
   workflow_dispatch:
     inputs:
@@ -30,7 +26,7 @@ on:
         required: true
         type: string
         default: '[{"type":"ksun","hash":"dev"}]'
-      OP_OPT:
+      optimize_level:
         description: "Compiler optimization level"
         required: true
         type: choice
