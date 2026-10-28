@@ -7,6 +7,8 @@ permissions:
 env:
   OP_OPT: ${{ github.event.inputs.OP_OPT }}
   OP_BBR3: ${{ github.event.inputs.OP_BBR3 }}
+  OP_ZEROMOUNT: ${{ github.event.inputs.OP_ZEROMOUNT }}
+  OP_ZUMA: ${{ github.event.inputs.OP_ZUMA }}
 on:
   workflow_dispatch:
     inputs:
