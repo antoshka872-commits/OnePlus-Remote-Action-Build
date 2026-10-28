@@ -13,8 +13,8 @@ on:
         type: choice
         options:
           # OOS16
-          - OP-NORD-5_oos16
-        default: OP-NORD-5_oos16
+          - OP-NORD-4_oos16
+        default: OP-NORD-4_oos16
       ksu_options:
         description: 'Enter KernelSU build json'
         required: true
