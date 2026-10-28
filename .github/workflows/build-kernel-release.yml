@@ -5,7 +5,8 @@ permissions:
   actions: write
 
 env:
-  OP_OPT: ${{ github.event.inputs.optimize_level }}
+  OP_OPT: 'true'
+  optimize_level: ${{ github.event.inputs.optimize_level }}
   OP_BBR3: 'false'
   OP_ZEROMOUNT: 'false'
   OP_NOMOUNT: 'false'
